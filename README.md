@@ -1,6 +1,6 @@
-# flutterapp
+# SmartConsumer
 
-A new Flutter application.
+An App which allows you to search for the product on internet by just scanning the barcode.
 
 ## Getting Started
 
