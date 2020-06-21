@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutterapp/shoppingcart.dart';
+import 'package:flutterapp/todoui.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_launcher_icons/android.dart';
 import 'package:flutter_launcher_icons/constants.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
         // brightness: Brightness.dark,
         fontFamily: 'NexaDemo',
@@ -129,7 +131,7 @@ class _HomeState extends State<Home> {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => shoppingcart()),
+                    MaterialPageRoute(builder: (context) => todoui()),
                   );
                 },
               ),
