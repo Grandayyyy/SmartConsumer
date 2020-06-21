@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-        // brightness: Brightness.dark,
+        brightness: Brightness.dark,
         fontFamily: 'NexaDemo',
       ),
       home: Home(),
@@ -180,17 +180,17 @@ class _HomeState extends State<Home> {
                                             fontSize: 20,
                                             fontFamily: 'NexaDemo',
                                             fontWeight: FontWeight.bold,
-                                            color: Colors.black,
+                                            color: Colors.white,
                                           ),
                                       ),
                                       new Padding(
-                                        padding: const EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(13.0),
                                       ),
                                       new ClipRRect(
                                         borderRadius: BorderRadius.circular(30),
                                         child: Center(
                                           child: Container(
-                                            height: screenHeightExcludingToolbar(context, dividedBy: 4),
+                                            height: screenHeightExcludingToolbar(context, dividedBy: 3.5),
                                             color:Colors.grey,
                                             child: numdisplay(),
                                           ),
