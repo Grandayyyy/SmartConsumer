@@ -49,7 +49,7 @@ class _todouiState extends State<todoui> {
               row['todo'],
               style: TextStyle(
                 fontSize: 18.0,
-                fontFamily: "Raleway",
+                fontFamily: "NexaDemo",
               ),
             ),
             onLongPress: () {
@@ -74,7 +74,7 @@ class _todouiState extends State<todoui> {
                 borderRadius: BorderRadius.circular(10.0),
               ),
               title: Text(
-                "Add Task",
+                "Add Item",
               ),
               content: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -87,7 +87,7 @@ class _todouiState extends State<todoui> {
                     },
                     style: TextStyle(
                       fontSize: 18.0,
-                      fontFamily: "Raleway",
+                      fontFamily: "NexaDemo",
                     ),
                     decoration: InputDecoration(
                       errorText: validated ? null : errtext,
@@ -110,18 +110,18 @@ class _todouiState extends State<todoui> {
                             } else if (texteditingcontroller.text.length >
                                 512) {
                               setState(() {
-                                errtext = "Too may Chanracters";
+                                errtext = "Too may Characters";
                                 validated = false;
                               });
                             } else {
                               addtodo();
                             }
                           },
-                          color: Colors.purple,
+                          color: Colors.white70,
                           child: Text("ADD",
                               style: TextStyle(
                                 fontSize: 18.0,
-                                fontFamily: "Raleway",
+                                fontFamily: "NexaDemo",
                               )),
                         )
                       ],
@@ -153,15 +153,15 @@ class _todouiState extends State<todoui> {
                   Icons.add,
                   color: Colors.white,
                 ),
-                backgroundColor: Colors.purple,
+                backgroundColor: Colors.white70,
               ),
               appBar: AppBar(
                 backgroundColor: Colors.black,
                 centerTitle: true,
                 title: Text(
-                  "My Tasks",
+                  "My Shopping List",
                   style: TextStyle(
-                    fontFamily: "Raleway",
+                    fontFamily: "NexaDemo",
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -169,8 +169,8 @@ class _todouiState extends State<todoui> {
               backgroundColor: Colors.black,
               body: Center(
                 child: Text(
-                  "No Task Avaliable",
-                  style: TextStyle(fontFamily: "Raleway", fontSize: 20.0),
+                  "No Item Avaliable",
+                  style: TextStyle(fontFamily: "NexaDemo", fontSize: 20.0),
                 ),
               ),
             );
@@ -188,9 +188,9 @@ class _todouiState extends State<todoui> {
                 backgroundColor: Colors.black,
                 centerTitle: true,
                 title: Text(
-                  "My Tasks",
+                  "My Items",
                   style: TextStyle(
-                    fontFamily: "Raleway",
+                    fontFamily: "NexaDemo",
                     fontWeight: FontWeight.bold,
                   ),
                 ),

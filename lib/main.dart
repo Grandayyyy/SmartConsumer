@@ -1,21 +1,19 @@
 
 import 'dart:async';
 import 'dart:io';
-//import 'package:auto_size_text/auto_size_text.dart';
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutterapp/shoppingcart.dart';
 import 'package:flutterapp/todoui.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:flutter_launcher_icons/android.dart';
-import 'package:flutter_launcher_icons/constants.dart';
-import 'package:flutter_launcher_icons/custom_exceptions.dart';
-import 'package:flutter_launcher_icons/ios.dart';
-import 'package:flutter_launcher_icons/main.dart';
-import 'package:flutter_launcher_icons/utils.dart';
+//import 'package:auto_size_text/auto_size_text.dart';
+//import 'package:flutter_launcher_icons/android.dart';
+//import 'package:flutter_launcher_icons/constants.dart';
+//import 'package:flutter_launcher_icons/custom_exceptions.dart';
+//import 'package:flutter_launcher_icons/main.dart';
+//import 'package:flutter_launcher_icons/utils.dart';
 
 void main() {
   runApp(new MyApp());
